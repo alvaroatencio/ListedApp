@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { UserContainerComponent } from './users-container/users-container.component';
+import { UsersContainerComponent } from './users-container/users-container.component';
+
 
 
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
-  styleUrls: ['./landing.component.css'],
-  declarations: [UserContainerComponent]
+  styleUrls: ['./landing.component.css']
 })
 export class LandingComponent {
-
+  usersContainer = UsersContainerComponent;
 }
