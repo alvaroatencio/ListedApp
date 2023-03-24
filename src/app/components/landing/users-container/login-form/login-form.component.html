@@ -1,0 +1,23 @@
+<section id="loginSection">
+  <h3>Iniciar sesión</h3>
+  <form id="loginForm" (ngSubmit)="login()" #loginForm="ngForm">
+    <div class="divsInputs">
+      <i class="fa fa-user icon"></i>
+      <input class="inputsG" type="text" placeholder="Usuario |  Email  " required name="user" [(ngModel)]="user">
+    </div>
+    <div class="divsInputs">
+      <i class="fa fa-lock icon"></i>
+      <input class="inputsG" id="inputIngresoContraseña" type="{{showPassword ? 'text' : 'password'}}" placeholder="Contraseña" required name="password" [(ngModel)]="password">
+      <i id="iIngresoContraseña" class="fa {{showPassword ? 'fa-eye' : 'fa-eye-slash'}} icon" (click)="togglePasswordVisibility()"></i>
+    </div>
+    <div class="divsBotones">
+      <label id="checkboxLabel">
+        <input id="checkbox" type="checkbox" value="Recordar usuario" name="rememberMe" [(ngModel)]="rememberMe">
+        Recordar usuario
+      </label>
+    </div>
+    <div class="divsBotones">
+      <button id="ingresar" type="submit" [disabled]="loginForm.invalid">Ingresar</button>
+    </div>
+  </form>
+</section>

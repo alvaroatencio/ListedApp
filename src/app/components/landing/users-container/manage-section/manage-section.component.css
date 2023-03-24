@@ -1,0 +1,38 @@
+
+#panelGestion{
+  margin-top: 30px;
+  background-color: orange;
+  border-radius: 15px 15px 15px 15px;
+}
+
+#inputCrearUsuario{
+  text-align: center;
+  border: 0;
+  border-radius: 0.25em;
+  background: initial;
+  background-color: orange;
+  color: #fff;
+  font-size: 1em;
+  width: 150px;
+  height: 38px;
+}
+#inputCrearUsuario:hover{
+  background-color: darkorange;
+}
+
+#inputCrearUsuario:disabled{
+  text-align: center;
+  border: 0;
+  border-radius: 0.25em;
+  background: initial;
+  background-color: darkorange;
+  opacity: 0.5;
+  color: #fff;
+  font-size: 1em;
+  width: 150px;
+  height: 38px;
+}
+
+.botonesGestion:hover{
+  cursor: pointer;
+}
